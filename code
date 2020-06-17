@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+#include<conio.h>
+void main()
+{
+
+    int n,d,b=0,i=1;
+    printf("enter a decimal number:\t");
+    scanf("%d",&n);
+    while(n!=0)
+    {
+
+        d = n%2;
+        b = b + d*i;
+        n = n/2;
+        i = i*10;
+    }
+    printf("binary equivalent=%d",b);
+    getch();
+
+
+}
